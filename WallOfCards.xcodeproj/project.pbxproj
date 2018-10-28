@@ -18,6 +18,7 @@
 		1BC997C82186004200CCE68B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997C72186004200CCE68B /* CustomImageView.swift */; };
 		1BC997CA2186006500CCE68B /* LatestCardsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997C92186006500CCE68B /* LatestCardsCustomCell.swift */; };
 		1BC997CC2186063E00CCE68B /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997CB2186063E00CCE68B /* Extension+UIView.swift */; };
+		B7EB1155A7324220C17508EF /* Pods_WallOfCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0A736CE7C535621A6611DC /* Pods_WallOfCards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		1BC997C72186004200CCE68B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		1BC997C92186006500CCE68B /* LatestCardsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCardsCustomCell.swift; sourceTree = "<group>"; };
 		1BC997CB2186063E00CCE68B /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		DB7237A5A584284733DB2B69 /* Pods-WallOfCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallOfCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0A736CE7C535621A6611DC /* Pods_WallOfCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallOfCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27EB0573219D5F9FE31FAE2 /* Pods-WallOfCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallOfCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EB1155A7324220C17508EF /* Pods_WallOfCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1199876A778E1E7C83338C9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD0A736CE7C535621A6611DC /* Pods_WallOfCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1BC997A32185DEB700CCE68B = {
 			isa = PBXGroup;
 			children = (
 				1BC997AE2185DEB700CCE68B /* WallOfCards */,
 				1BC997AD2185DEB700CCE68B /* Products */,
+				23D5626BC7C380E08B8E925C /* Pods */,
+				1199876A778E1E7C83338C9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,15 @@
 			path = WallOfCards;
 			sourceTree = "<group>";
 		};
+		23D5626BC7C380E08B8E925C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB7237A5A584284733DB2B69 /* Pods-WallOfCards.debug.xcconfig */,
+				F27EB0573219D5F9FE31FAE2 /* Pods-WallOfCards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BC997BE2185DEBB00CCE68B /* Build configuration list for PBXNativeTarget "WallOfCards" */;
 			buildPhases = (
+				84249FBFCC372BF1A29BF57D /* [CP] Check Pods Manifest.lock */,
 				1BC997A82185DEB700CCE68B /* Sources */,
 				1BC997A92185DEB700CCE68B /* Frameworks */,
 				1BC997AA2185DEB700CCE68B /* Resources */,
+				C544EA5BA387356E4B094351 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +173,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84249FBFCC372BF1A29BF57D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallOfCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C544EA5BA387356E4B094351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADMozaicCollectionViewLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BC997A82185DEB700CCE68B /* Sources */ = {
@@ -304,15 +369,13 @@
 		};
 		1BC997BF2185DEBB00CCE68B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7237A5A584284733DB2B69 /* Pods-WallOfCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -322,15 +385,13 @@
 		};
 		1BC997C02185DEBB00CCE68B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27EB0573219D5F9FE31FAE2 /* Pods-WallOfCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

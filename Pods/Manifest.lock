@@ -1,0 +1,16 @@
+PODS:
+  - ADMozaicCollectionViewLayout (4.0.4)
+
+DEPENDENCIES:
+  - ADMozaicCollectionViewLayout (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ADMozaicCollectionViewLayout
+
+SPEC CHECKSUMS:
+  ADMozaicCollectionViewLayout: 3145a65a65e5f1f5dc22dd31b2e9a03407259adf
+
+PODFILE CHECKSUM: 5c73d8bde1999743e1cceba920d17f9b0401e013
+
+COCOAPODS: 1.5.3
