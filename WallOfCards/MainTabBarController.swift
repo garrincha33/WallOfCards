@@ -13,8 +13,6 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
-        tabBar.tintColor = .purple
         UINavigationBar.appearance().prefersLargeTitles = true
         
         

@@ -8,6 +8,12 @@
 
 import UIKit
 
+class CustomNavigationController: UINavigationController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,6 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         window?.rootViewController = MainTabBarController()
+        
+        
+        UINavigationBar.appearance().barTintColor = UIColor.rgb(red: 62, green: 45, blue: 84)
+        UINavigationBar.appearance().barStyle = .blackTranslucent
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().prefersLargeTitles = true
+        
+        UITabBar.appearance().tintColor = UIColor.rgb(red: 147, green: 217, blue: 62)
+        UITabBar.appearance().barTintColor = UIColor.rgb(red: 26, green: 15, blue: 63)
+        UITabBar.appearance().isTranslucent = true
         return true
     }
 
