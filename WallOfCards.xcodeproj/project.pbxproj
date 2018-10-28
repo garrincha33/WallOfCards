@@ -30,7 +30,7 @@
 		1BC997B92185DEBB00CCE68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BC997BB2185DEBB00CCE68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BC997C12185ED2400CCE68B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		1BC997C32185F73500CCE68B /* LatestCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCardsController.swift; sourceTree = "<group>"; };
+		1BC997C32185F73500CCE68B /* LatestCardsController.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = LatestCardsController.swift; sourceTree = "<group>"; };
 		1BC997C52185FD1700CCE68B /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		1BC997C72186004200CCE68B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		1BC997C92186006500CCE68B /* LatestCardsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCardsCustomCell.swift; sourceTree = "<group>"; };
@@ -200,11 +200,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADMozaicCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRMosaicLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,7 +375,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -391,7 +394,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

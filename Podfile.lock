@@ -1,16 +1,16 @@
 PODS:
-  - ADMozaicCollectionViewLayout (4.0.4)
+  - TRMosaicLayout (1.0.0)
 
 DEPENDENCIES:
-  - ADMozaicCollectionViewLayout (~> 4.0)
+  - TRMosaicLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - ADMozaicCollectionViewLayout
+    - TRMosaicLayout
 
 SPEC CHECKSUMS:
-  ADMozaicCollectionViewLayout: 3145a65a65e5f1f5dc22dd31b2e9a03407259adf
+  TRMosaicLayout: 1875505c48dd2877afd69a8bea7b4c1c63afa5b5
 
-PODFILE CHECKSUM: 5c73d8bde1999743e1cceba920d17f9b0401e013
+PODFILE CHECKSUM: fe7592826ec2fbb7513c4425d7ecffc8b6111d87
 
 COCOAPODS: 1.5.3

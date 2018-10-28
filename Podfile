@@ -6,6 +6,6 @@ target 'WallOfCards' do
   use_frameworks!
 
   # Pods for WallOfCards
-pod 'ADMozaicCollectionViewLayout', '~> 4.0'
+pod 'TRMosaicLayout'
 
 end

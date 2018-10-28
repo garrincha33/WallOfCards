@@ -4,14 +4,14 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ADMozaicCollectionViewLayout.xcscheme</key>
+		<key>Pods-WallOfCards.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-WallOfCards.xcscheme</key>
+		<key>TRMosaicLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
