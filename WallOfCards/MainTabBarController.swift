@@ -18,9 +18,12 @@ class MainTabBarController: UITabBarController {
         UINavigationBar.appearance().prefersLargeTitles = true
         
         
+        let layout = UICollectionViewFlowLayout()
+        let latestCardsController = LatestCardsController(collectionViewLayout: layout)
         
         viewControllers = [
-            setupNavControllers(with: ViewController(), title: "Latest Cards", image: #imageLiteral(resourceName: "home_selected")),
+
+            setupNavControllers(with: latestCardsController, title: "Latest Cards", image: #imageLiteral(resourceName: "home_selected")),
             setupNavControllers(with: ViewController(), title: "Favourites", image: #imageLiteral(resourceName: "prices_new"))
         ]
     }

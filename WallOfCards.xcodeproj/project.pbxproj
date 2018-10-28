@@ -13,6 +13,7 @@
 		1BC997B72185DEBB00CCE68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC997B62185DEBB00CCE68B /* Assets.xcassets */; };
 		1BC997BA2185DEBB00CCE68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC997B82185DEBB00CCE68B /* LaunchScreen.storyboard */; };
 		1BC997C22185ED2400CCE68B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997C12185ED2400CCE68B /* MainTabBarController.swift */; };
+		1BC997C42185F73500CCE68B /* LatestCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997C32185F73500CCE68B /* LatestCardsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BC997B92185DEBB00CCE68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BC997BB2185DEBB00CCE68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BC997C12185ED2400CCE68B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1BC997C32185F73500CCE68B /* LatestCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCardsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1BC997B82185DEBB00CCE68B /* LaunchScreen.storyboard */,
 				1BC997BB2185DEBB00CCE68B /* Info.plist */,
 				1BC997C12185ED2400CCE68B /* MainTabBarController.swift */,
+				1BC997C32185F73500CCE68B /* LatestCardsController.swift */,
 			);
 			path = WallOfCards;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC997C42185F73500CCE68B /* LatestCardsController.swift in Sources */,
 				1BC997B22185DEB700CCE68B /* ViewController.swift in Sources */,
 				1BC997B02185DEB700CCE68B /* AppDelegate.swift in Sources */,
 				1BC997C22185ED2400CCE68B /* MainTabBarController.swift in Sources */,
