@@ -7,119 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */; };
-		49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */; };
-		552D9B09B631A50F107E4CDD02ADF545 /* Pods-WallOfCards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C650E335123187E42C373B429861A7D0 /* Pods-WallOfCards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */; };
-		7C66748DE74031094DA1A3DC8344DF64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		A86FCDD3A6107880773259D5D779B96E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */; };
-		B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */; };
-		BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */; };
-		D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDB5890B46DE21C818F9BF9B460BEDD /* ADMozaicCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFEA7FB87939A9C4288EEDFE2A82B64C /* Pods-WallOfCards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4C6EC9BB21D7777E0A0C6DB6460F8 /* Pods-WallOfCards-dummy.m */; };
-		E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */; };
-		E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCE1BE049B8D87C240ED81F2D43EFD /* ADMozaicCollectionViewLayout-dummy.m */; };
-		F4D7EDF365D26A1FAE1F476BEBDFD33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */; };
-		FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */; };
-		FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */; };
+		11EECF7AB996BE872D0EF7D2F37D24CC /* Pods-WallOfCards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C650E335123187E42C373B429861A7D0 /* Pods-WallOfCards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252EEC93C210C33D81DD1DAF891B8E2E /* Pods-WallOfCards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4C6EC9BB21D7777E0A0C6DB6460F8 /* Pods-WallOfCards-dummy.m */; };
+		7752AFB165B550D726A8641941AD6E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		839FE7A1C61D14E1AAAFE7689F9C8884 /* TRMosaicLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 625A3532AE5357B4AF5170011D7517BF /* TRMosaicLayout-dummy.m */; };
+		A1A445DC14ACE01404743036C2D8FD97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E1463AD97641EC03AC244972324B814A /* TRMosaicColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A880F3FE8F056F4BC5BD094835FEF2D /* TRMosaicColumn.swift */; };
+		ECDAB27427B2A7C4A9498D451CC5956F /* TRMosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF0781EA9F9A46152043E22521A72E /* TRMosaicLayout.swift */; };
+		ED92231A966DE6FFDC3CA464F60443EC /* TRMosaicLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA7ECF8C586CE30DE1FEBB8179F3ADE /* TRMosaicLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1E6F05083593E66433AA92353AC122A /* PBXContainerItemProxy */ = {
+		8AA2AD5D5F405424410B20CA54FA7BBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7814BB29C43881C657824C85B7870715;
-			remoteInfo = ADMozaicCollectionViewLayout;
+			remoteGlobalIDString = CACB5BD0D3FA640FB45DB4E4228340B9;
+			remoteInfo = TRMosaicLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutCache.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutCache.swift; sourceTree = "<group>"; };
-		06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutStructs.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutStructs.swift; sourceTree = "<group>"; };
-		0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayout.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayout.swift; sourceTree = "<group>"; };
-		0F0B04394772118628A78F6D18A043A9 /* ADMozaicCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
-		1E168B8A1CBBAAC0CBA098F14B4D5E3B /* ADMozaicCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ADMozaicCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		326E21DCB74AEA7765D5A7606AE0BB3A /* ADMozaicCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ADMozaicCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		27CF0781EA9F9A46152043E22521A72E /* TRMosaicLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TRMosaicLayout.swift; path = TRMosaicLayout/Classes/TRMosaicLayout.swift; sourceTree = "<group>"; };
+		341089F202182D288FF0FD396179E7BA /* TRMosaicLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TRMosaicLayout-prefix.pch"; sourceTree = "<group>"; };
 		3CE4A4D3920A765A108B5E947179229F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B41433A2F8492D574E5D0E4565A35AB /* Pods_WallOfCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallOfCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0323CB3D782E8DEF4C751B2EE968A9 /* Pods-WallOfCards-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WallOfCards-frameworks.sh"; sourceTree = "<group>"; };
-		563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhantomProtocols.swift; path = ADMozaikCollectionViewLayout/Public/PhantomProtocols.swift; sourceTree = "<group>"; };
 		59F6EA0156F04B326CAB64CB46B61625 /* Pods-WallOfCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WallOfCards.debug.xcconfig"; sourceTree = "<group>"; };
-		5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutAttributes.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutAttributes.swift; sourceTree = "<group>"; };
-		606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionGeometry.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionGeometry.swift; sourceTree = "<group>"; };
-		7BDB5890B46DE21C818F9BF9B460BEDD /* ADMozaicCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
-		804CFBB13ADB1109DC2A804FDDDD7B6E /* ADMozaicCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADMozaicCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
-		8626532628C03DD7CD277CE0190CAFBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionMatrix.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionMatrix.swift; sourceTree = "<group>"; };
+		5A880F3FE8F056F4BC5BD094835FEF2D /* TRMosaicColumn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TRMosaicColumn.swift; path = TRMosaicLayout/Classes/TRMosaicColumn.swift; sourceTree = "<group>"; };
+		625A3532AE5357B4AF5170011D7517BF /* TRMosaicLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TRMosaicLayout-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		737210EB3B2FC224011D8B9AF90E2017 /* Pods_WallOfCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallOfCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F318CF36B4DBE905ECDFFF074C3FD4A /* TRMosaicLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TRMosaicLayout.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95F8B76EC300193391F5867808965CED /* Pods-WallOfCards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WallOfCards.modulemap"; sourceTree = "<group>"; };
 		96777835527DA357B2FF2A0D883343B4 /* Pods-WallOfCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WallOfCards.release.xcconfig"; sourceTree = "<group>"; };
-		9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutDelegate.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutDelegate.swift; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BEFCE1BE049B8D87C240ED81F2D43EFD /* ADMozaicCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADMozaicCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		BEA7ECF8C586CE30DE1FEBB8179F3ADE /* TRMosaicLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TRMosaicLayout-umbrella.h"; sourceTree = "<group>"; };
 		C650E335123187E42C373B429861A7D0 /* Pods-WallOfCards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WallOfCards-umbrella.h"; sourceTree = "<group>"; };
 		C6B4C6EC9BB21D7777E0A0C6DB6460F8 /* Pods-WallOfCards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WallOfCards-dummy.m"; sourceTree = "<group>"; };
-		C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoEquatable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoEquatable.generated.swift; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE2F9B04C16AB5DD53F2C1A3E13ED8D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F07F660D2CC6410B19401303A68330 /* TRMosaicLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TRMosaicLayout.modulemap; sourceTree = "<group>"; };
 		DB24F73AC0134ABD7A005E20E21C6C28 /* Pods-WallOfCards-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WallOfCards-resources.sh"; sourceTree = "<group>"; };
-		E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoHashable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoHashable.generated.swift; sourceTree = "<group>"; };
 		F935649BBAD637AD84C421702F484A66 /* Pods-WallOfCards-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WallOfCards-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC29262C9E4AB797B2849A704832429A /* TRMosaicLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TRMosaicLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4E4D21BB66D8143D37B413B99C7174 /* Pods-WallOfCards-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WallOfCards-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */ = {
+		07A5A1FCB1E14DBB9B8D368CFF557FFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86FCDD3A6107880773259D5D779B96E /* Foundation.framework in Frameworks */,
-				F4D7EDF365D26A1FAE1F476BEBDFD33F /* UIKit.framework in Frameworks */,
+				A1A445DC14ACE01404743036C2D8FD97 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCD57584651F420FAD412EF7C612925D /* Frameworks */ = {
+		6C97C0395CB8C9E7299087E333889EAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C66748DE74031094DA1A3DC8344DF64 /* Foundation.framework in Frameworks */,
+				7752AFB165B550D726A8641941AD6E4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B83BEE18625B8A62F58D24785C9D1D5 /* Support Files */ = {
+		45DA6D12BB1705EBC26D502038C5AF31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				326E21DCB74AEA7765D5A7606AE0BB3A /* ADMozaicCollectionViewLayout.modulemap */,
-				804CFBB13ADB1109DC2A804FDDDD7B6E /* ADMozaicCollectionViewLayout.xcconfig */,
-				BEFCE1BE049B8D87C240ED81F2D43EFD /* ADMozaicCollectionViewLayout-dummy.m */,
-				0F0B04394772118628A78F6D18A043A9 /* ADMozaicCollectionViewLayout-prefix.pch */,
-				7BDB5890B46DE21C818F9BF9B460BEDD /* ADMozaicCollectionViewLayout-umbrella.h */,
-				8626532628C03DD7CD277CE0190CAFBC /* Info.plist */,
+				737210EB3B2FC224011D8B9AF90E2017 /* Pods_WallOfCards.framework */,
+				FC29262C9E4AB797B2849A704832429A /* TRMosaicLayout.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ADMozaicCollectionViewLayout";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		779E010BCC8ABCDCC9FB08E7539FDE36 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				DC7ACE2704CE9EF9B9992A4C763CA675 /* TRMosaicLayout */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		77B254F22A6BE8E65B5CDAF9C9203DC3 /* Targets Support Files */ = {
@@ -134,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				D3F8C700363CC2A2766C2158DC1FE578 /* Pods */,
-				B43EBD7B2EFF573E7D48D501210E2FE9 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				779E010BCC8ABCDCC9FB08E7539FDE36 /* Pods */,
+				45DA6D12BB1705EBC26D502038C5AF31 /* Products */,
 				77B254F22A6BE8E65B5CDAF9C9203DC3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -159,96 +126,101 @@
 			path = "Target Support Files/Pods-WallOfCards";
 			sourceTree = "<group>";
 		};
-		B43EBD7B2EFF573E7D48D501210E2FE9 /* Products */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E168B8A1CBBAAC0CBA098F14B4D5E3B /* ADMozaicCollectionViewLayout.framework */,
-				4B41433A2F8492D574E5D0E4565A35AB /* Pods_WallOfCards.framework */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA3A484242F446546AFE702DDF29F7BA /* ADMozaicCollectionViewLayout */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */,
-				5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */,
-				00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */,
-				9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */,
-				606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */,
-				93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */,
-				06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */,
-				C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */,
-				E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */,
-				563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */,
-				3B83BEE18625B8A62F58D24785C9D1D5 /* Support Files */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			path = ADMozaicCollectionViewLayout;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D3F8C700363CC2A2766C2158DC1FE578 /* Pods */ = {
+		DC7ACE2704CE9EF9B9992A4C763CA675 /* TRMosaicLayout */ = {
 			isa = PBXGroup;
 			children = (
-				BA3A484242F446546AFE702DDF29F7BA /* ADMozaicCollectionViewLayout */,
+				5A880F3FE8F056F4BC5BD094835FEF2D /* TRMosaicColumn.swift */,
+				27CF0781EA9F9A46152043E22521A72E /* TRMosaicLayout.swift */,
+				F10412B2A6EC9D65E4B8CA4AFA75E918 /* Support Files */,
 			);
-			name = Pods;
+			path = TRMosaicLayout;
+			sourceTree = "<group>";
+		};
+		F10412B2A6EC9D65E4B8CA4AFA75E918 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F9B04C16AB5DD53F2C1A3E13ED8D8 /* Info.plist */,
+				D8F07F660D2CC6410B19401303A68330 /* TRMosaicLayout.modulemap */,
+				8F318CF36B4DBE905ECDFFF074C3FD4A /* TRMosaicLayout.xcconfig */,
+				625A3532AE5357B4AF5170011D7517BF /* TRMosaicLayout-dummy.m */,
+				341089F202182D288FF0FD396179E7BA /* TRMosaicLayout-prefix.pch */,
+				BEA7ECF8C586CE30DE1FEBB8179F3ADE /* TRMosaicLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TRMosaicLayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C43F82C51C58E8BE4390CA0294B87B02 /* Headers */ = {
+		17F337885C9C267B64BA1290DFF61686 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552D9B09B631A50F107E4CDD02ADF545 /* Pods-WallOfCards-umbrella.h in Headers */,
+				ED92231A966DE6FFDC3CA464F60443EC /* TRMosaicLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC193AFD1A8D5219457634FB2A800BC1 /* Headers */ = {
+		B93F1E2B96BA25FF658F2487C87B1F24 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */,
+				11EECF7AB996BE872D0EF7D2F37D24CC /* Pods-WallOfCards-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */ = {
+		BAD260A2BFFAB7ABC93398FAB1899B70 /* Pods-WallOfCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */;
+			buildConfigurationList = 75AB997B57650C24B270D792EA8E3CBF /* Build configuration list for PBXNativeTarget "Pods-WallOfCards" */;
 			buildPhases = (
-				072A75094DB1A65593BD5CD8549BB486 /* Sources */,
-				89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */,
-				EC193AFD1A8D5219457634FB2A800BC1 /* Headers */,
+				C3EC6A05B89988AAEB9C4B1297217FF1 /* Sources */,
+				6C97C0395CB8C9E7299087E333889EAF /* Frameworks */,
+				B93F1E2B96BA25FF658F2487C87B1F24 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = ADMozaicCollectionViewLayout;
-			productName = ADMozaicCollectionViewLayout;
-			productReference = 1E168B8A1CBBAAC0CBA098F14B4D5E3B /* ADMozaicCollectionViewLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D23F1381251A8C20C6E48AC3C9BC61AF /* Pods-WallOfCards */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA68C584AD52BEF95404AFE9761CA237 /* Build configuration list for PBXNativeTarget "Pods-WallOfCards" */;
-			buildPhases = (
-				7A12406D60E0A2EC02B61612480C2B5C /* Sources */,
-				DCD57584651F420FAD412EF7C612925D /* Frameworks */,
-				C43F82C51C58E8BE4390CA0294B87B02 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC1ABCA10E9827577CAC6EEC03A9B244 /* PBXTargetDependency */,
+				63DE3EA34A1FF0E20F79A48357FAABB5 /* PBXTargetDependency */,
 			);
 			name = "Pods-WallOfCards";
 			productName = "Pods-WallOfCards";
-			productReference = 4B41433A2F8492D574E5D0E4565A35AB /* Pods_WallOfCards.framework */;
+			productReference = 737210EB3B2FC224011D8B9AF90E2017 /* Pods_WallOfCards.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CACB5BD0D3FA640FB45DB4E4228340B9 /* TRMosaicLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF20723ECCF849F850BBA00BF40B1D1 /* Build configuration list for PBXNativeTarget "TRMosaicLayout" */;
+			buildPhases = (
+				45C886F534BB297C9568C8442622530C /* Sources */,
+				07A5A1FCB1E14DBB9B8D368CFF557FFB /* Frameworks */,
+				17F337885C9C267B64BA1290DFF61686 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRMosaicLayout;
+			productName = TRMosaicLayout;
+			productReference = FC29262C9E4AB797B2849A704832429A /* TRMosaicLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -268,51 +240,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B43EBD7B2EFF573E7D48D501210E2FE9 /* Products */;
+			productRefGroup = 45DA6D12BB1705EBC26D502038C5AF31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */,
-				D23F1381251A8C20C6E48AC3C9BC61AF /* Pods-WallOfCards */,
+				BAD260A2BFFAB7ABC93398FAB1899B70 /* Pods-WallOfCards */,
+				CACB5BD0D3FA640FB45DB4E4228340B9 /* TRMosaicLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		072A75094DB1A65593BD5CD8549BB486 /* Sources */ = {
+		45C886F534BB297C9568C8442622530C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */,
-				B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */,
-				BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */,
-				55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */,
-				B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */,
-				FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */,
-				FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */,
-				E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */,
-				105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */,
-				49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */,
-				F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */,
+				E1463AD97641EC03AC244972324B814A /* TRMosaicColumn.swift in Sources */,
+				839FE7A1C61D14E1AAAFE7689F9C8884 /* TRMosaicLayout-dummy.m in Sources */,
+				ECDAB27427B2A7C4A9498D451CC5956F /* TRMosaicLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A12406D60E0A2EC02B61612480C2B5C /* Sources */ = {
+		C3EC6A05B89988AAEB9C4B1297217FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFEA7FB87939A9C4288EEDFE2A82B64C /* Pods-WallOfCards-dummy.m in Sources */,
+				252EEC93C210C33D81DD1DAF891B8E2E /* Pods-WallOfCards-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC1ABCA10E9827577CAC6EEC03A9B244 /* PBXTargetDependency */ = {
+		63DE3EA34A1FF0E20F79A48357FAABB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ADMozaicCollectionViewLayout;
-			target = 7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */;
-			targetProxy = A1E6F05083593E66433AA92353AC122A /* PBXContainerItemProxy */;
+			name = TRMosaicLayout;
+			target = CACB5BD0D3FA640FB45DB4E4228340B9 /* TRMosaicLayout */;
+			targetProxy = 8AA2AD5D5F405424410B20CA54FA7BBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,9 +344,9 @@
 			};
 			name = Debug;
 		};
-		160D75DFEEE0901C00A0DAF967B73163 /* Release */ = {
+		650136E1536D7D2B4237FA1E2709AABA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 804CFBB13ADB1109DC2A804FDDDD7B6E /* ADMozaicCollectionViewLayout.xcconfig */;
+			baseConfigurationReference = 8F318CF36B4DBE905ECDFFF074C3FD4A /* TRMosaicLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -393,14 +357,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TRMosaicLayout/TRMosaicLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TRMosaicLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = ADMozaicCollectionViewLayout;
-				PRODUCT_NAME = ADMozaicCollectionViewLayout;
+				MODULEMAP_FILE = "Target Support Files/TRMosaicLayout/TRMosaicLayout.modulemap";
+				PRODUCT_MODULE_NAME = TRMosaicLayout;
+				PRODUCT_NAME = TRMosaicLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -413,7 +377,39 @@
 			};
 			name = Release;
 		};
-		5759E939BF7B64754C47FB4A23CC2D6B /* Debug */ = {
+		6F35BBE3EC1E4BC55B7FA6C28BC477F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F318CF36B4DBE905ECDFFF074C3FD4A /* TRMosaicLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TRMosaicLayout/TRMosaicLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TRMosaicLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TRMosaicLayout/TRMosaicLayout.modulemap";
+				PRODUCT_MODULE_NAME = TRMosaicLayout;
+				PRODUCT_NAME = TRMosaicLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F9B590D0E70B9DA5F5B0CB467CDCDFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59F6EA0156F04B326CAB64CB46B61625 /* Pods-WallOfCards.debug.xcconfig */;
 			buildSettings = {
@@ -448,6 +444,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		976D11ED0B21AE666F9282E54BF5A508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96777835527DA357B2FF2A0D883343B4 /* Pods-WallOfCards.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WallOfCards/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WallOfCards/Pods-WallOfCards.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -508,74 +540,6 @@
 			};
 			name = Release;
 		};
-		E7DAC1759A5F314FA2A7B45717A761A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 804CFBB13ADB1109DC2A804FDDDD7B6E /* ADMozaicCollectionViewLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = ADMozaicCollectionViewLayout;
-				PRODUCT_NAME = ADMozaicCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F834EDC116F536FCE3355FBBF283BD2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96777835527DA357B2FF2A0D883343B4 /* Pods-WallOfCards.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WallOfCards/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WallOfCards/Pods-WallOfCards.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,20 +552,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */ = {
+		75AB997B57650C24B270D792EA8E3CBF /* Build configuration list for PBXNativeTarget "Pods-WallOfCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7DAC1759A5F314FA2A7B45717A761A3 /* Debug */,
-				160D75DFEEE0901C00A0DAF967B73163 /* Release */,
+				7F9B590D0E70B9DA5F5B0CB467CDCDFE /* Debug */,
+				976D11ED0B21AE666F9282E54BF5A508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA68C584AD52BEF95404AFE9761CA237 /* Build configuration list for PBXNativeTarget "Pods-WallOfCards" */ = {
+		BDF20723ECCF849F850BBA00BF40B1D1 /* Build configuration list for PBXNativeTarget "TRMosaicLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5759E939BF7B64754C47FB4A23CC2D6B /* Debug */,
-				F834EDC116F536FCE3355FBBF283BD2C /* Release */,
+				6F35BBE3EC1E4BC55B7FA6C28BC477F1 /* Debug */,
+				650136E1536D7D2B4237FA1E2709AABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
