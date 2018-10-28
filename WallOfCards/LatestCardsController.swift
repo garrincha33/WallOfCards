@@ -14,11 +14,9 @@ class LatestCardsController: UICollectionViewController, UICollectionViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if let layout = collectionView.collectionViewLayout as? PinterestLayout {
-//            layout.delegate = self
-//        }
+        //transparentNavBar()
         collectionView?.register(LatestCardsCustomCell.self, forCellWithReuseIdentifier: String(describing: LatestCardsCustomCell.self))
-        collectionView?.backgroundColor = .white
+        collectionView?.backgroundColor = UIColor.rgb(red: 26, green: 15, blue: 63)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,14 +51,10 @@ class LatestCardsController: UICollectionViewController, UICollectionViewDelegat
         return cell
     }
     
+    fileprivate func transparentNavBar() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+    }
+    
 }
-//
-//extension LatestCardsController: PinterestLayoutDelegate {
-//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-//        let image = images[indexPath.row]
-//        let height = image.size.height
-//        return height
-//
-//    }
-
-//}
