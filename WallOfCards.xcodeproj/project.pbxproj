@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0B10B92187796F00E7945C /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10B82187796F00E7945C /* CustomNavBar.swift */; };
+		1B0B10BB21877DF300E7945C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B0B10BA21877DF300E7945C /* GoogleService-Info.plist */; };
 		1BC997B02185DEB700CCE68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997AF2185DEB700CCE68B /* AppDelegate.swift */; };
 		1BC997B22185DEB700CCE68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997B12185DEB700CCE68B /* ViewController.swift */; };
 		1BC997B52185DEB700CCE68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC997B32185DEB700CCE68B /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0B10B82187796F00E7945C /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		1B0B10BA21877DF300E7945C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BC997AC2185DEB700CCE68B /* WallOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC997AF2185DEB700CCE68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC997B12185DEB700CCE68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1B0B10BC21877F8C00E7945C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B10B82187796F00E7945C /* CustomNavBar.swift */,
+				1BC997C52185FD1700CCE68B /* PinterestLayout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B0B10BD21877F9100E7945C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BC997C72186004200CCE68B /* CustomImageView.swift */,
+				1BC997C92186006500CCE68B /* LatestCardsCustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B0B10BE21877F9700E7945C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BC997B12185DEB700CCE68B /* ViewController.swift */,
+				1BC997C32185F73500CCE68B /* LatestCardsController.swift */,
+				1BC997C12185ED2400CCE68B /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1BC997A32185DEB700CCE68B = {
 			isa = PBXGroup;
 			children = (
@@ -81,18 +113,16 @@
 		1BC997AE2185DEB700CCE68B /* WallOfCards */ = {
 			isa = PBXGroup;
 			children = (
+				1B0B10BE21877F9700E7945C /* Controller */,
+				1B0B10BD21877F9100E7945C /* View */,
+				1B0B10BC21877F8C00E7945C /* Model */,
 				1BC997AF2185DEB700CCE68B /* AppDelegate.swift */,
-				1BC997B12185DEB700CCE68B /* ViewController.swift */,
 				1BC997B32185DEB700CCE68B /* Main.storyboard */,
 				1BC997B62185DEBB00CCE68B /* Assets.xcassets */,
 				1BC997B82185DEBB00CCE68B /* LaunchScreen.storyboard */,
 				1BC997BB2185DEBB00CCE68B /* Info.plist */,
-				1BC997C12185ED2400CCE68B /* MainTabBarController.swift */,
-				1BC997C32185F73500CCE68B /* LatestCardsController.swift */,
-				1BC997C52185FD1700CCE68B /* PinterestLayout.swift */,
-				1BC997C72186004200CCE68B /* CustomImageView.swift */,
-				1BC997C92186006500CCE68B /* LatestCardsCustomCell.swift */,
 				1BC997CB2186063E00CCE68B /* Extension+UIView.swift */,
+				1B0B10BA21877DF300E7945C /* GoogleService-Info.plist */,
 			);
 			path = WallOfCards;
 			sourceTree = "<group>";
@@ -167,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC997BA2185DEBB00CCE68B /* LaunchScreen.storyboard in Resources */,
+				1B0B10BB21877DF300E7945C /* GoogleService-Info.plist in Resources */,
 				1BC997B72185DEBB00CCE68B /* Assets.xcassets in Resources */,
 				1BC997B52185DEB700CCE68B /* Main.storyboard in Resources */,
 			);
@@ -200,11 +231,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WallOfCards/Pods-WallOfCards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TRMosaicLayout/TRMosaicLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRMosaicLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,6 +262,7 @@
 				1BC997C62185FD1700CCE68B /* PinterestLayout.swift in Sources */,
 				1BC997C82186004200CCE68B /* CustomImageView.swift in Sources */,
 				1BC997CC2186063E00CCE68B /* Extension+UIView.swift in Sources */,
+				1B0B10B92187796F00E7945C /* CustomNavBar.swift in Sources */,
 				1BC997C42185F73500CCE68B /* LatestCardsController.swift in Sources */,
 				1BC997B22185DEB700CCE68B /* ViewController.swift in Sources */,
 				1BC997B02185DEB700CCE68B /* AppDelegate.swift in Sources */,
@@ -375,10 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,10 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
