@@ -7,5 +7,11 @@ target 'WallOfCards' do
 
   # Pods for WallOfCards
 pod 'TRMosaicLayout'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
+pod 'SDWebImage'
+
+
 
 end
