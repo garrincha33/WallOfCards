@@ -12,8 +12,7 @@ class LatestCardsCustomCell: UICollectionViewCell {
     
     let cardImageView: UIImageView = {
         let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        iv.layer.cornerRadius = 8
+        iv.layer.cornerRadius = 16
         iv.clipsToBounds = true
         return iv
     }()
@@ -23,7 +22,6 @@ class LatestCardsCustomCell: UICollectionViewCell {
         super.init(frame: frame)
        // backgroundColor = .gray
         addSubview(cardImageView)
-        cardImageView.anchor(top: safeAreaLayoutGuide.topAnchor, left: safeAreaLayoutGuide.leftAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 20, paddingBottom: 20, paddingRight: 20, width: 150, height: 250)
     }
     
     required init?(coder aDecoder: NSCoder) {
