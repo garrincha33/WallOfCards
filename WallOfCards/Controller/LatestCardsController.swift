@@ -11,10 +11,10 @@ import TRMosaicLayout
 import FirebaseDatabase
 
 class LatestCardsController: UICollectionViewController {
-    
-    let images = [#imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8")]
-    var firebaseImages: [MainCardsModel] = []
-     
+//
+//    let images = [#imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8")]
+    //var firebaseImages: [MainCardsModel] = []
+     var imagesToDisplay: [UIImage] = []
     var REF_IMAGES = Database.database().reference().child("MainImages")
     
     override func viewDidLoad() {
@@ -37,23 +37,29 @@ class LatestCardsController: UICollectionViewController {
      
      private func loadImages() {
           Api.User.getImages { (images) in
-               
-               print("results from complettion")
-               print(images.photoUrl ?? "")
-              
+               let urlString = images.photoUrl
+               guard let url = URL(string: urlString ?? "") else {return}
+               if let data = try? Data(contentsOf: url) {
+                    guard let imageConverted: UIImage = UIImage(data: data) else {return}
+                    
+                    
+                         self.imagesToDisplay.append(imageConverted)
+                         self.collectionView.reloadData()
+                  
+               }
           }
      }
 
      
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return imagesToDisplay.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LatestCardsCustomCell.self), for: indexPath) as! LatestCardsCustomCell
-          let image = images[indexPath.row]
-          let imageView = UIImageView()
+          let image = imagesToDisplay[indexPath.row]
+          let imageView = cell.fireBaseImageView
           imageView.image = image
-          imageView.frame = cell.frame
+          //imageView.frame = cell.frame
           cell.backgroundView = imageView
         return cell
     }

@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import SDWebImage
 
 class LatestCardsCustomCell: UICollectionViewCell {
+
     
-    let cardImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.layer.cornerRadius = 16
-        iv.clipsToBounds = true
-        return iv
-    }()
+    let fireBaseImageView = UIImageView()
+    
+    var images: MainCardsModel? {
+        didSet {
+            
+            if let photoUrlString = images?.photoUrl {
+                let photoUrl = URL(string: photoUrlString)
+                fireBaseImageView.sd_setImage(with: photoUrl)
+            }
+        }
+    }
     
     
     override init(frame: CGRect) {
