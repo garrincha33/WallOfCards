@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1B0B10B92187796F00E7945C /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10B82187796F00E7945C /* CustomNavBar.swift */; };
 		1B0B10BB21877DF300E7945C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B0B10BA21877DF300E7945C /* GoogleService-Info.plist */; };
+		1B0B10C0218792FF00E7945C /* MainCardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10BF218792FF00E7945C /* MainCardsModel.swift */; };
+		1B0B10C32187970A00E7945C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10C22187970A00E7945C /* ApiService.swift */; };
+		1B0B10C52188CDF600E7945C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10C42188CDF600E7945C /* Config.swift */; };
+		1B0B10C72188CEE200E7945C /* MainImagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10C62188CEE200E7945C /* MainImagesAPI.swift */; };
+		1B0B10C92188DC2A00E7945C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B10C82188DC2A00E7945C /* Api.swift */; };
 		1BC997B02185DEB700CCE68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997AF2185DEB700CCE68B /* AppDelegate.swift */; };
 		1BC997B22185DEB700CCE68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC997B12185DEB700CCE68B /* ViewController.swift */; };
 		1BC997B52185DEB700CCE68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC997B32185DEB700CCE68B /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* Begin PBXFileReference section */
 		1B0B10B82187796F00E7945C /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		1B0B10BA21877DF300E7945C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B0B10BF218792FF00E7945C /* MainCardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardsModel.swift; sourceTree = "<group>"; };
+		1B0B10C22187970A00E7945C /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		1B0B10C42188CDF600E7945C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1B0B10C62188CEE200E7945C /* MainImagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImagesAPI.swift; sourceTree = "<group>"; };
+		1B0B10C82188DC2A00E7945C /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		1BC997AC2185DEB700CCE68B /* WallOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC997AF2185DEB700CCE68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC997B12185DEB700CCE68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 			children = (
 				1B0B10B82187796F00E7945C /* CustomNavBar.swift */,
 				1BC997C52185FD1700CCE68B /* PinterestLayout.swift */,
+				1B0B10BF218792FF00E7945C /* MainCardsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +103,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		1B0B10C1218796F900E7945C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B10C22187970A00E7945C /* ApiService.swift */,
+				1B0B10C42188CDF600E7945C /* Config.swift */,
+				1B0B10C62188CEE200E7945C /* MainImagesAPI.swift */,
+				1B0B10C82188DC2A00E7945C /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		1BC997A32185DEB700CCE68B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 		1BC997AE2185DEB700CCE68B /* WallOfCards */ = {
 			isa = PBXGroup;
 			children = (
+				1B0B10C1218796F900E7945C /* Api */,
 				1B0B10BE21877F9700E7945C /* Controller */,
 				1B0B10BD21877F9100E7945C /* View */,
 				1B0B10BC21877F8C00E7945C /* Model */,
@@ -264,9 +287,14 @@
 				1BC997CC2186063E00CCE68B /* Extension+UIView.swift in Sources */,
 				1B0B10B92187796F00E7945C /* CustomNavBar.swift in Sources */,
 				1BC997C42185F73500CCE68B /* LatestCardsController.swift in Sources */,
+				1B0B10C52188CDF600E7945C /* Config.swift in Sources */,
 				1BC997B22185DEB700CCE68B /* ViewController.swift in Sources */,
+				1B0B10C32187970A00E7945C /* ApiService.swift in Sources */,
+				1B0B10C0218792FF00E7945C /* MainCardsModel.swift in Sources */,
+				1B0B10C72188CEE200E7945C /* MainImagesAPI.swift in Sources */,
 				1BC997B02185DEB700CCE68B /* AppDelegate.swift in Sources */,
 				1BC997C22185ED2400CCE68B /* MainTabBarController.swift in Sources */,
+				1B0B10C92188DC2A00E7945C /* Api.swift in Sources */,
 				1BC997CA2186006500CCE68B /* LatestCardsCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +445,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -433,7 +464,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMQAGMF379;
 				INFOPLIST_FILE = WallOfCards/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twisted.WallOfCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

@@ -24,11 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        
         window = UIWindow()
         window?.makeKeyAndVisible()
         window?.rootViewController = MainTabBarController()
-        FirebaseApp.configure()
-        
+ 
         UINavigationBar.appearance().barTintColor = UIColor.rgb(red: 62, green: 45, blue: 84)
         UINavigationBar.appearance().barStyle = .blackTranslucent
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

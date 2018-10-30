@@ -8,10 +8,14 @@
 
 import UIKit
 import TRMosaicLayout
+import FirebaseDatabase
 
 class LatestCardsController: UICollectionViewController {
     
     let images = [#imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "8")]
+    var firebaseImages: [MainCardsModel] = []
+     
+    var REF_IMAGES = Database.database().reference().child("MainImages")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,20 +24,32 @@ class LatestCardsController: UICollectionViewController {
           navController.view.backgroundColor = .clear
      }
      
+     loadImages()
      
+
         let mosaicLayout = TRMosaicLayout()
         self.collectionView?.collectionViewLayout = mosaicLayout
         mosaicLayout.delegate = (self as TRMosaicLayoutDelegate)
         //transparentNavBar()
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: String(describing: UICollectionViewCell.self))
+        collectionView?.register(LatestCardsCustomCell.self, forCellWithReuseIdentifier: String(describing: LatestCardsCustomCell.self))
         collectionView?.backgroundColor = UIColor.rgb(red: 26, green: 15, blue: 63)
     }
-    
+     
+     private func loadImages() {
+          Api.User.getImages { (images) in
+               
+               print("results from complettion")
+               print(images.photoUrl ?? "")
+              
+          }
+     }
+
+     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: UICollectionViewCell.self), for: indexPath)
+     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LatestCardsCustomCell.self), for: indexPath) as! LatestCardsCustomCell
           let image = images[indexPath.row]
           let imageView = UIImageView()
           imageView.image = image
