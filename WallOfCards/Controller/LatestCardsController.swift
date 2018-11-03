@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SimpleImageViewer
 import TRMosaicLayout
 
-class LatestCardsController: UICollectionViewController {
+
+class LatestCardsController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
      
      var firebaseImages: [MainCardsModel] = []
 
@@ -52,10 +54,19 @@ class LatestCardsController: UICollectionViewController {
           let image = firebaseImages[indexPath.row]
           let imageView = cell.fireBaseImageView
           cell.images = image
+          imageView.contentMode = .scaleToFill
           //imageView.image = image
           //imageView.frame = cell.frame
           cell.backgroundView = imageView
           return cell
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+          let cell = collectionView.cellForItem(at: indexPath) as! LatestCardsCustomCell
+          let configuration = ImageViewerConfiguration { config in
+               config.imageView = cell.fireBaseImageView
+          }
+          present(ImageViewerController(configuration: configuration), animated: true)
      }
 }
 

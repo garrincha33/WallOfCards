@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62BDE0CED0D4985F55DE1AC7C78CCC70"
-               BuildableName = "TRMosaicLayout.framework"
-               BlueprintName = "TRMosaicLayout"
+               BlueprintIdentifier = "3B92B56A9CAB5B58139F477375004F14"
+               BuildableName = "SimpleImageViewer.framework"
+               BlueprintName = "SimpleImageViewer"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62BDE0CED0D4985F55DE1AC7C78CCC70"
-            BuildableName = "TRMosaicLayout.framework"
-            BlueprintName = "TRMosaicLayout"
+            BlueprintIdentifier = "3B92B56A9CAB5B58139F477375004F14"
+            BuildableName = "SimpleImageViewer.framework"
+            BlueprintName = "SimpleImageViewer"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A81D4B1608F505CAA49DA71FE286EC77"
+               BlueprintIdentifier = "8A1DF0B8FCF8616F9CAC08DBB2A6B996"
                BuildableName = "Pods_WallOfCards.framework"
                BlueprintName = "Pods-WallOfCards"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A81D4B1608F505CAA49DA71FE286EC77"
+            BlueprintIdentifier = "8A1DF0B8FCF8616F9CAC08DBB2A6B996"
             BuildableName = "Pods_WallOfCards.framework"
             BlueprintName = "Pods-WallOfCards"
             ReferencedContainer = "container:Pods.xcodeproj">
