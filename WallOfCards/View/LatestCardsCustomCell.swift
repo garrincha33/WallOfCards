@@ -12,7 +12,16 @@ import SDWebImage
 class LatestCardsCustomCell: UICollectionViewCell {
 
     
-    let fireBaseImageView = UIImageView()
+    let fireBaseImageView: UIImageView = {
+        let image = UIImageView()
+        image.layer.cornerRadius = 12
+        image.layer.masksToBounds = true
+        return image
+    }()
+    
+    
+    
+    
     
     var images: MainCardsModel? {
         didSet {
