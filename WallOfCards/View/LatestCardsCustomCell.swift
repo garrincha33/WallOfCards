@@ -10,7 +10,6 @@ import UIKit
 import SDWebImage
 
 class LatestCardsCustomCell: UICollectionViewCell {
-
     
     let fireBaseImageView: UIImageView = {
         let image = UIImageView()
@@ -18,10 +17,6 @@ class LatestCardsCustomCell: UICollectionViewCell {
         image.layer.masksToBounds = true
         return image
     }()
-    
-    
-    
-    
     
     var images: MainCardsModel? {
         didSet {
@@ -33,10 +28,9 @@ class LatestCardsCustomCell: UICollectionViewCell {
         }
     }
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-       // backgroundColor = .gray
+        // backgroundColor = .gray
         //addSubview(cardImageView)
     }
     
