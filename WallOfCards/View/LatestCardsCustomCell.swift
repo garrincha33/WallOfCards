@@ -28,6 +28,8 @@ class LatestCardsCustomCell: UICollectionViewCell {
         }
     }
     
+    //TODO: implement cards
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         // backgroundColor = .gray
